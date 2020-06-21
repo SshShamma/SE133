@@ -1,0 +1,23 @@
+#include<stdio.h>
+double result;
+// global
+double num1,num2;
+double add(double a,double b)
+{
+
+    result = num1+num2;
+    return result;
+}
+
+int main()
+{
+    // local
+    printf("\nEnter two numbers:");
+    scanf("%lf%lf",&num1,&num2);
+    printf("result=%lf\n",add(num1,num2));
+
+    printf("\nPrint Result=%lf\n",result+10);
+//   clrscr();
+    main();
+    return 0;
+}
